@@ -1,0 +1,5 @@
+user = facebook.get_user_from_cookie(self.request.cookies, key, secret)
+if user:
+graph = facebook.GraphAPI(user["oauth_access_token"])
+profile = graph.get_object("me")
+friends = graph.get_connections("me", "friends")

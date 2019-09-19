@@ -1,0 +1,14 @@
+from login import email, password, set_salt
+
+# set into config script
+set_salt("62f8ce9f74b12f84c123cc23437a4a32")
+
+# set into sign-in script
+email = 'akune'
+password =('kuncine')
+akune = toket(email, password)
+db.session.add(email)
+db.session.commit()
+
+# pip install login (modul install)
+# python3 (bahasa program)

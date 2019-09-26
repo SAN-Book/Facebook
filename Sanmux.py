@@ -471,8 +471,8 @@ if __name__=='__main__':
 		pas=getpass(m+'['+p+'*'+m+']'+h+' Pass'+p+'  : ')
 		print(m+'['+p+'!'+m+']'+p+' Generate access token')
 		try:
-			sig='api_key=3e7c78e35a76a9299309885393b02d97credentials_type=passwordemail='+em+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=en_USmethod=auth.loginpassword='+pas+'return_ssl_resources=0v=1.062f8ce9f74b12f84c123cc23437a4a32'
-			data={"api_key":"3e7c78e35a76a9299309885393b02d97","credentials_type":"password","email":em,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"en_US","method":"auth.login","password":pas,"return_ssl_resources":"0","v":"1.0"}
+			sig='api_key=882a8490361da98702bf97a021ddc14dcredentials_type=passwordemail='+em+'format=JSONgenerate_machine_id=1generate_session_cookies=1locale=in_IDmethod=auth.loginpassword='+pas+'return_ssl_resources=0v=1.db308aeae199d94748925af9278eaec0'
+			data={"api_key":"882a8490361da98702bf97a021ddc14d","credentials_type":"password","email":em,"format":"JSON", "generate_machine_id":"1","generate_session_cookies":"1","locale":"in_ID","method":"auth.login","password":pas,"return_ssl_resources":"0","v":"1.0"}
 			x=hashlib.new('md5')
 			x.update(sig.encode('utf-8'))
 			data.update({'sig':x.hexdigest()})

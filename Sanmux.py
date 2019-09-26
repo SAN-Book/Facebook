@@ -466,7 +466,7 @@ if __name__=='__main__':
 	except (KeyError,IOError):
 		os.system('clear')
 		print(logo)
-		print(p+40*'_')
+		print(p+'Anda harus login facebook dahulu.')
 		em=input(m+'\n['+p+'*'+m+']'+h+' Email'+p+' : ')
 		pas=getpass(m+'['+p+'*'+m+']'+h+' Pass'+p+'  : ')
 		print(m+'['+p+'!'+m+']'+p+' Generate access token')
